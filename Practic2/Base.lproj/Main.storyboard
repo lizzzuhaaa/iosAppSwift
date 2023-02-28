@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practic2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShK-o1-i8D">
+                                <rect key="frame" x="20" y="79" width="390" height="799"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVh-ge-pDq">
+                                        <rect key="frame" x="8" y="49.333333333333343" width="374" height="33"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6NQ-bq-vjx">
+                                        <rect key="frame" x="8" y="102" width="374" height="211"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-BY-vAz">
+                                        <rect key="frame" x="289.66666666666669" y="323" width="92.333333333333314" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Share"/>
+                                        <connections>
+                                            <action selector="onShareClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Map-fK-225"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73m-Mb-hQX">
+                                        <rect key="frame" x="-4" y="321" width="82" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.up.heart" catalog="system" title="1/0k"/>
+                                        <connections>
+                                            <action selector="onLikeClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yl9-GS-YHq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="peg-9b-cej">
+                                        <rect key="frame" x="145" y="323" width="100" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="message" catalog="system" title="85"/>
+                                        <connections>
+                                            <action selector="onCommentClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUH-um-3qA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usrname / time / domain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnd-aI-qT4">
+                                        <rect key="frame" x="8" y="8" width="292" height="33.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="STIXTwoText-Italic_Medium-Italic" family="STIX Two Text" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C1-Mg-asp">
+                                        <rect key="frame" x="330" y="8" width="40" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="onSaveClickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HE-cf-XQ7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59961442440100743" green="0.30701064207657758" blue="0.6532297036082475" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d9s-BY-vAz" secondAttribute="trailing" constant="8" id="1Iz-I9-mzB"/>
+                                    <constraint firstItem="bVh-ge-pDq" firstAttribute="leading" secondItem="ShK-o1-i8D" secondAttribute="leading" constant="8" id="2Nn-2a-ckv"/>
+                                    <constraint firstItem="Fnd-aI-qT4" firstAttribute="top" secondItem="ShK-o1-i8D" secondAttribute="top" constant="8" id="46r-DO-EGc">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="61"/>
+                                    </constraint>
+                                    <constraint firstItem="peg-9b-cej" firstAttribute="top" secondItem="6NQ-bq-vjx" secondAttribute="bottom" constant="10" id="4ZL-31-Bmy">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                                    </constraint>
+                                    <constraint firstItem="4C1-Mg-asp" firstAttribute="top" secondItem="ShK-o1-i8D" secondAttribute="top" constant="8" id="AuO-0k-ZUq">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="38"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="61"/>
+                                    </constraint>
+                                    <constraint firstItem="Fnd-aI-qT4" firstAttribute="leading" secondItem="ShK-o1-i8D" secondAttribute="leading" constant="8" id="D5C-CO-yv6"/>
+                                    <constraint firstItem="6NQ-bq-vjx" firstAttribute="trailing" secondItem="bVh-ge-pDq" secondAttribute="trailing" id="DxO-J9-1Xj"/>
+                                    <constraint firstItem="bVh-ge-pDq" firstAttribute="top" secondItem="ShK-o1-i8D" secondAttribute="top" constant="49.329999999999998" id="HKM-aF-0mz">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="Fnd-aI-qT4" secondAttribute="trailing" constant="90" id="Mor-nJ-ZB4">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="3"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="bVh-ge-pDq" secondAttribute="trailing" constant="8" id="OuV-gk-34W"/>
+                                    <constraint firstItem="6NQ-bq-vjx" firstAttribute="top" secondItem="bVh-ge-pDq" secondAttribute="bottom" constant="19.670000000000002" id="Pmk-HF-uKl">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                                    </constraint>
+                                    <constraint firstItem="6NQ-bq-vjx" firstAttribute="leading" secondItem="bVh-ge-pDq" secondAttribute="leading" id="V50-ey-4de"/>
+                                    <constraint firstItem="d9s-BY-vAz" firstAttribute="top" secondItem="6NQ-bq-vjx" secondAttribute="bottom" constant="10" id="ZRx-pa-56S">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                                    </constraint>
+                                    <constraint firstItem="peg-9b-cej" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="73m-Mb-hQX" secondAttribute="trailing" constant="8" id="bnM-Cw-N6R"/>
+                                    <constraint firstItem="4C1-Mg-asp" firstAttribute="leading" secondItem="Fnd-aI-qT4" secondAttribute="trailing" constant="30" id="k88-1y-UYD">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="-57"/>
+                                    </constraint>
+                                    <constraint firstItem="73m-Mb-hQX" firstAttribute="leading" secondItem="ShK-o1-i8D" secondAttribute="leading" constant="-4" id="lVf-sh-0tl"/>
+                                    <constraint firstItem="bVh-ge-pDq" firstAttribute="top" secondItem="Fnd-aI-qT4" secondAttribute="bottom" constant="8" id="mUu-T3-SAM">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4C1-Mg-asp" secondAttribute="trailing" constant="20" symbolic="YES" id="nk5-Tx-PXX">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="2"/>
+                                    </constraint>
+                                    <constraint firstItem="73m-Mb-hQX" firstAttribute="top" secondItem="6NQ-bq-vjx" secondAttribute="bottom" constant="8" id="t7Y-qD-suE">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                                    </constraint>
+                                    <constraint firstItem="d9s-BY-vAz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="peg-9b-cej" secondAttribute="trailing" constant="8" id="ubM-q8-RaV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ShK-o1-i8D" secondAttribute="bottom" constant="20" id="0cb-00-VXU">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="ShK-o1-i8D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="csv-mG-7Pn">
+                                <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ShK-o1-i8D" secondAttribute="trailing" constant="20" id="h0G-DY-HhF"/>
+                            <constraint firstItem="ShK-o1-i8D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nPx-Ht-T8N">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-35"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="ShK-o1-i8D" id="YLe-jb-wHc"/>
+                        <outlet property="commentsButton" destination="peg-9b-cej" id="t6x-nv-ExE"/>
+                        <outlet property="imageWeb" destination="6NQ-bq-vjx" id="IwP-hy-ZMb"/>
+                        <outlet property="likeButton" destination="73m-Mb-hQX" id="oOj-zb-yji"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="fAC-L7-DNr"/>
+                        <outlet property="savingButton" destination="4C1-Mg-asp" id="ZOg-s8-gEw"/>
+                        <outlet property="shareButton" destination="d9s-BY-vAz" id="tGM-mY-iiD"/>
+                        <outlet property="titleLable" destination="bVh-ge-pDq" id="OgH-HE-WOT"/>
+                        <outlet property="upperLabel" destination="Fnd-aI-qT4" id="hFm-dc-eMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.66952789699571" y="2.7906976744186047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.heart" catalog="system" width="128" height="107"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
